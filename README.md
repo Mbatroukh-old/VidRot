@@ -1,2 +1,2 @@
 # VidRot
-Chrome extension for rotating videos on video streaming sites
+Save your neck, and rotate the video not your head.

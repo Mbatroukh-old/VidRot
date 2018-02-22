@@ -1,17 +1,17 @@
-  {
-    "name": "Video Rotator",
-    "description" : "Save your neck, and rotate the video not your head.",
-    "version": "1.0",
-    "manifest_version": 2,
-    "browser_action": {
-      "default_popup": "instructions.html",
-      "default_icon": "icon-16.png"
-    },
-    "content_scripts": [
+{
+  "name": "Video Rotator",
+  "description" : "Save your neck, and rotate the video not your head.",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "hello.html",
+    "default_icon": "icon-16.png"
+  },
+  "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "css": ["mystyles.css"],
-      "js": ["jquery.js", "myscript.js"]
+      "css": ["css/vidRot.css"],
+      "js": ["js/jquery.js", "js/vidRot.js"]
     }
-  ],
-  }
+  ]
+}
