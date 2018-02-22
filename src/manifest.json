@@ -1,0 +1,23 @@
+{
+  "name": "Video Rotator",
+  "description" : "Save your neck, rotate the video not your head.",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons": { 
+    "16": "icon-16.png",
+    "32": "icon-32.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png" 
+  },
+  "browser_action": {
+    "default_popup": "hello.html",
+    "default_icon": "icon-16.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["css/vidRot.css"],
+      "js": ["js/jquery.js", "js/vidRot.js"]
+    }
+  ]
+}
