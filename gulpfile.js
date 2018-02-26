@@ -20,12 +20,12 @@ gulp.task('concat', function(){
 });
 
 gulp.task('moving', function(){
-	gulp.src(['src/instructions.html', 'src/manifest.json'])
+	gulp.src(['src/instructions.html', 'src/instructions.js', 'src/manifest.json'])
       .pipe(gulp.dest('dist'));
 	gulp.src("src/i/*.png")
       .pipe(gulp.dest('dist'));
-    gulp.src("src/js/vidRot.js")
-      .pipe(gulp.dest('dist/js'));
+  gulp.src("src/js/vidRot.js")
+    .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('watch', function(){
