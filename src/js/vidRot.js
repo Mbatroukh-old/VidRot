@@ -7,13 +7,10 @@ if ($('.html5-video-player').length > 0) {
 };
 
 var vidRot = $("#vidRot-range").roundSlider({
-  radius: 75,
+  radius: 100,
   width: 20,
   max: 360,
-  mouseScrollAction: true,
-  startAngle: 270,
   handleSize: "20",
-  tooltipFormat: "tooltipVal2",
   drag: "onValueChange"
 });
 
@@ -26,6 +23,11 @@ function onValueChange(e) {
     $('.tester-div').css('transform', 'rotate(' + e.value + 'deg)');
     $('.html5-video-player').css('transform', 'rotate(' + e.value + 'deg)');
 }
+
+$('.trigger').click(function() {
+  console.log('Trigger Fired');
+  $('.html5-video-player').html();
+});
 
 function getDeg() {
   // Temporary solution

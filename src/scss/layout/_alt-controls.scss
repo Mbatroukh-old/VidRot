@@ -1,0 +1,45 @@
+.alternate-controls{
+	position: relative;
+	border: solid 1px black;
+	width: 160px;
+	height: 160px;
+	left: 20px;
+	top: -180px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	z-index: 100;
+	.top, .left, .right, .bottom{
+		position: absolute;
+		margin: auto;
+	}
+	.top, .bottom{
+		width: 35px;
+		text-align: center;
+		display: block;
+		left: 0;
+		right: 0;
+	}
+	.left, .right{
+		width: 32px;
+		height: 32px;
+		top: 0;
+		bottom: 0;
+	}
+	.top{
+		top: 20px;
+	}
+	.left{
+		left: 20px;
+		transform: rotate(90deg);
+	}
+	.right{
+		right: 20px;
+		transform: rotate(-90deg);
+	}
+	.bottom{
+		bottom: 20px;
+	}
+	img{
+		width: 32px;
+	}
+}
